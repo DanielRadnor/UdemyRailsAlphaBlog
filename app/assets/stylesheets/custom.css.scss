@@ -24,6 +24,27 @@ $navbar-default-bg: black;
   text-align: center;
 }
 
+.article-actions {
+  border-top: 1px solid #eaeaea;
+  padding-top: 5px;
+}
+
+.description {
+  margin-top: 0;
+}
+
+.article-title {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.article-body {
+  border-top: 1px solid #eaeaea;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+ 
 .jumbotron {
   background-image: asset-url('new_cover_page.png');
   background-size: cover;
@@ -42,6 +63,7 @@ text-align: center;
   font-size: 1.7em;
   background-color: black;
 }
+
 
 footer {
   margin-top: 45px;
