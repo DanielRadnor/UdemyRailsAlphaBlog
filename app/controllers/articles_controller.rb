@@ -18,7 +18,7 @@ class ArticlesController < ApplicationController
     #this populates the newly created row in the articles database with the information from the form
     @article = Article.new(article_params)
     if @article.save
-      #flash[:notice] = "Article was saved successfully"
+      flash[:success] = "Article was saved successfully"
       redirect_to article_path(@article)
     else
       render 'new'
@@ -28,6 +28,7 @@ class ArticlesController < ApplicationController
     def update
       @article = Article.find(params[:id])
       if @article.update(article_params)
+        flash[:success] = "Article was saved successfully"
         redirect_to article_path(@article)
       else
          render 'edit'
@@ -41,6 +42,7 @@ class ArticlesController < ApplicationController
   def destroy
     @article = Article.find(params[:id])
     @article.destroy
+    flash[:danger] = "Article was saved successfully"
     redirect_to articles_path
   end
   
