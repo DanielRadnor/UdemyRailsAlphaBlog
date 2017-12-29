@@ -14,9 +14,11 @@ class ArticlesController < ApplicationController
   end
   
   def create
+    debugger
     #render plain: params[:article].inspect
     #this populates the newly created row in the articles database with the information from the form
     @article = Article.new(article_params)
+    @article.user = User.first
     if @article.save
       flash[:success] = "Article was saved successfully"
       redirect_to article_path(@article)
