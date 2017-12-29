@@ -14,7 +14,7 @@ class ArticlesController < ApplicationController
   end
   
   def create
-    debugger
+    #debugger
     #render plain: params[:article].inspect
     #this populates the newly created row in the articles database with the information from the form
     @article = Article.new(article_params)
