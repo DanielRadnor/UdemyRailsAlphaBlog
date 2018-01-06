@@ -44,6 +44,11 @@ $navbar-default-bg: black;
   padding-bottom: 15px;
 }
 
+.listing {
+  list-style: none;
+  padding-left: 0;
+}
+
  
 .jumbotron {
   background-image: asset-url('new_cover_page.png');
